@@ -4,4 +4,4 @@ Báo cáo quá trính thực hiện:
 3.Những phần tự thực hiện:phần khung html,css,phần hiển thị nội dung đã chọn trong js
 4.Những phần tham khảo AI:Phần menu điều hướng trong chương 4
 5.Khó khăn gặp phải:phần js
-6.Link live web (github pages):
+6.Link live web (github pages):int
