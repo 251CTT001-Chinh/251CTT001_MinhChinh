@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/9.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo" />
+      <div class="background">
+        <h1>CÂU LẠC BỘ MÔN CÔNG NGHỆ THÔNG TIN</h1>
+        <p>Kết nối và sáng tạo</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Diễn đàn</a></li>
+          <li><a href="#">Sự kiện</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Mục đăng mới</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <div id="hoatdong">
+          <ul>
+            <button id="menuToggle" class="menu-toggle">☰ Menu</button>
+            <li onclick="chonmenu('Trang chủ')">Trang chủ</li>
+            <li onclick="chonmenu('Giới thiệu')">Giới thiệu</li>
+            <li onclick="chonmenu('Diễn đàn')">Diễn đàn</li>
+            <li onclick="chonmenu('Sự kiện')">Sự kiện</li>
+            <li onclick="chonmenu('Liên hệ')">Liên hệ</li>
+            <div class="bos">
+              <strong>Mục đang chọn:</strong>
+              <p id="mucchon">Chưa chọn</p>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <section class="menu">
+        <section class="content">
+          <div class="content">
+            <img class="CNTT1" src="img/CNTT1.png" alt="Discussion Forum" />
+            <h2>Diễn đàn thảo luận Câu Lạc Bộ Công Nghệ Thông Tin</h2>
+            <p class="welcome">
+              Chào mừng bạn đến với Câu Lạc Bộ Công Nghệ Thông Tin 2026! Đây là
+              nơi để bạn chia sẻ ý kiến, hỏi đáp và kết nối với cộng đồng yêu
+              công nghệ thông tin. Hãy tham gia vào các chủ đề thảo luận, chia
+              sẻ kinh nghiệm và học hỏi từ những người khác. Chúng tôi khuyến
+              khích sự tôn trọng và hợp tác trong mọi cuộc trò chuyện. Hãy cùng
+              nhau xây dựng một cộng đồng mạnh mẽ và sáng tạo!
+            </p>
+            <button class="btn" onclick="xemchitiet('Diễn đàn', 0)">
+              Tìm hiểu ngay
+            </button>
+          </div>
+        </section>
+        <p class="tile"><strong>Các nhóm trong câu lạc bộ</strong></p>
+        <section class="ND">
+          <div class="ND1">
+            <img src="img/CNTT2.png" alt="Topic 1" />
+            <h3>Nhóm về Kĩ thuật lập trình</h3>
+            <p>
+              Những người yêu công nghệ thông tin và muốn tìm hiểu về kĩ thuật
+              lập trình.
+            </p>
+            <p class="points">Điểm thưởng: 10 điểm</p>
+            <button onclick="xemchitiet('Nhóm về Kĩ thuật lập trình', 10)">
+              Chi tiết
+            </button>
+          </div>
+          <div class="ND1">
+            <img src="img/CNTT3.png" alt="Topic 2" />
+            <h3>Nhóm về Kĩ thuật phần cứng</h3>
+            <p>
+              Những người yêu công nghệ thông tin và muốn tìm hiểu về kĩ thuật
+              phần cứng.
+            </p>
+            <p class="points">Điểm thưởng: 8 điểm rèn luyện</p>
+            <button onclick="xemchitiet('Nhóm về Kĩ thuật phần cứng', 8)">
+              Chi tiết
+            </button>
+          </div>
+          <div class="ND1">
+            <img src="img/CNTT4.png" alt="Topic 3" />
+            <h3>Nhóm về Kĩ thuật phần mềm</h3>
+            <p>
+              Những người yêu công nghệ thông tin và muốn tìm hiểu về kĩ thuật
+              phần mềm.
+            </p>
+            <p class="points">Điểm thưởng: 6 điểm rèn luyện</p>
+            <button onclick="xemchitiet('Nhóm về Kĩ thuật phần mềm', 6)">
+              Chi tiết
+            </button>
+          </div>
+        </section>
+        <p class="node">
+          <strong>Ban cán sự câu lạc bộ công nghệ thông tin</strong>
+        </p>
+        <article>
+          <div class="ND1">
+            <img src="img/CNTT5.jpg" alt="Article Image" />
+            <h3>Chủ tịch câu lạc bộ</h3>
+            <p>Nguyễn Văn An</p>
+          </div>
+          <div class="ND1">
+            <img src="img/CNTT6.jpg" alt="Article Image" />
+            <h3>Phó chủ tịch câu lạc bộ</h3>
+            <p>Nguyễn Văn Bảo</p>
+          </div>
+        </article>
+        <section class="PC">
+          <h4>Hoạt động đã chọn</h4>
+          <p id="HĐ">-Chưa chọn hoạt động nào.</p>
+          <p id="Điểm">-Điểm thưởng: 0</p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="box">
+        <p>
+          &copy; 2026 Câu Lạc Bộ Môn Công Nghệ Thông Tin. All rights reserved.
+        </p>
+        <p>Liên hệ: 251CTT001_Chinh@pyu.edu.vn</p>
+      </div>
+      <div class="box">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="box">
+        <p>Địa chỉ: Đường Nguyễn Văn Huyên, Thành phố Tuy Hòa, Việt Nam</p>
+      </div>
+    </footer>
+    <script src="js/9.js"></script>
+  </body>
+</html>
